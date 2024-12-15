@@ -1,101 +1,138 @@
+import AboutUs from "@/components/AboutUs";
+import ComingTo from "@/components/ComingTo";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import RegisterAndBe from "@/components/RegisterAndBe";
+import SponsorNext from "@/components/SponsorNext";
+import WhatHappensAt from "@/components/WhatHappensAt";
+import { sponsorsImages } from "@/constants";
+import { SquareArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <MaxWidthWrapper className="w-full flex-1 relative">
+        {/* left side */}
+        <section className=" flex ">
+          <main className="pl-14 pt-[200px] z-[90] w-full animate-slideInLeft flex flex-col gap-8 row-start-2 items-center sm:items-start">
+            <div className="max-w-[822px] ">
+              <p className="first-letter:capitalize font-semibold lg:text-[0.9rem] 2xl:text-[1.125rem] leading-[21.6px] text-background">
+                Join our premier monthly meetup for startup founders and tech
+                visionaries
+              </p>
+              <h1 className="mb-5 capitalize text-[#5C00B3] font-bold text-[1.8rem] md:text-[2rem] lg:text-[2.55rem] zxl:text-[3.125rem] leading-[62.5px]">
+                Connect, Collaborate, Innovate!
+              </h1>
+              <p className="text-[1rem] md:text-[1.125rem] 2xl:text-[1.5rem] text-background font-normal leading-[36px] w-[622px]">
+                Every last Friday of the month, we bring together the brightest
+                minds in our local tech ecosystem. Whether you're a seasoned
+                entrepreneur or just starting your journey, Founder's Friday is
+                your launchpad for new ideas, valuable connections, and
+                game-changing opportunities.
+              </p>
+            </div>
+            <div>
+              <button
+                type="button"
+                className="cursor-pointer flex items-center space-x-[10px] text-[#9524FF] text-[1.5rem] leading-[33.6px] font-normal capitalize border-[2px] border-[#9524FF] p-5 rounded-[40px] hover:text-opacity-75 transition-colors duration-100 ease-in-out group group-hover:text-opacity-75"
+              >
+                <span> Register For Our Next Event</span>
+                <Image
+                  src={"/double-right-arrow_40x40.svg"}
+                  width={40}
+                  height={40}
+                  alt="double right arrow"
+                  className="object-cover group-hover:text-opacity-75 cursor-pointer"
+                />
+              </button>
+              <p className="mt-5 mb-20 text-base text-[#6750A4] font-semibold leading-[19.2px] drop-shadow-lg">
+                Join Us for our next meetup on the 26th of July 2024
+              </p>
+              <div className="flex items-center space-x-4">
+                {sponsorsImages.map((sponsorsImage, index) => (
+                  <div
+                    key={sponsorsImage.src + index}
+                    className="w-20 h-20"
+                  >
+                    <Image
+                      src={`/sponsors/${sponsorsImage.src}`}
+                      width={80}
+                      height={80}
+                      alt="cafe one"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center space-x-2 mt-5">
+                <p className="text-[0.875rem] text-background font-bold leading-[16.8px]">
+                  Become a collaborator today
+                </p>
+                <SquareArrowOutUpRight
+                  size={20}
+                  stroke="#212121"
+                />
+              </div>
+            </div>
+          </main>
+          {/* right side */}
+          <main className=" absolute right-20 -z-10">
+            <div className="relative w-[997px] h-[1125.5px] -ml-[498px] mt-[53px]">
+              <Image
+                src={"imageTrailHero_997x1125.svg"}
+                width={997}
+                height={1125.5}
+                alt="image trail vector."
+                className="w-full h-full object-cover "
+              />
+            </div>
+            <div className="absolute top-[150px] right-56 w-[361.8px] height-[387.32px]">
+              <Image
+                src={"/image-with-play_807x853.png"}
+                width={807}
+                height={853}
+                alt="Image of founders fridays may edition"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute top-[250px] -right-7 w-[361.8px] height-[387.32px]">
+              <Image
+                src={"/group-image_858x898.png"}
+                width={858}
+                height={898}
+                alt="Image of founders fridays may edition"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute top-[590px] right-76 w-[201px] height-[215.01px]">
+              <Image
+                src={"/white-bg-ladies_477x499.png"}
+                width={477}
+                height={499}
+                alt="Image of founders fridays may edition"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute top-[750px] right-40 w-[100.5px] height-[107.25px]">
+              <Image
+                src={"/white-bg-group_250x260.png"}
+                width={250}
+                height={260}
+                alt="Image of founders fridays may edition"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </main>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        {/* about us */}
+        <AboutUs />
+      </MaxWidthWrapper>
+      {/* what happends at */}
+      <WhatHappensAt />
+      <SponsorNext />
+      <ComingTo />
+      <RegisterAndBe />
     </div>
   );
 }

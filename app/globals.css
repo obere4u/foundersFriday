@@ -19,3 +19,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.text-shadow {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.card-shadow {
+  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-100)
+    var(--sds-size-depth-100) var(--sds-size-depth-negative-100)
+    var(--sds-color-black-100);
+
+  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-400)
+    var(--sds-size-depth-800) var(--sds-size-depth-negative-100)
+    var(--sds-color-black-200);
+}
