@@ -19,20 +19,20 @@ export default function ComingTo() {
 
 
   return (
-    <div className='mt-40 py-20 px-10 bg-[url("/guyonmic_1728x808.png")] bg-cover bg-no-repeat max-w-[1728px] mx-auto h-[808px]'>
-      <div className="flex items-center space-x-56">
-        <div className="w-[804px]">
-          <p className="text-[#EBE9ED] text-[3rem] font-bold leading-[62.5px]">
+    <div className='mt-40 py-20 border px-10 bg-[url("/guyonmic_1728x808.png")] bg-cover bg-no-repeat max-w-[1728px] mx-auto max-h-[808px]'>
+      <div className="md:flex items-center md:space-x-56">
+        <div className="max-w-[804px] w-full">
+          <p className="text-[#EBE9ED] text-[2rem] lg:text-[3rem] font-bold lg:leading-[62.5px]">
             Founders Friday is coming to
           </p>
 
           <p
-            className="text-[#A649FF] font-bold text-[8rem] leading-[160px] animate-slideUp"
+            className="text-[#A649FF] font-bold text-[2.5rem] lg:text-[8rem] lg:leading-[160px] animate-slideUp"
             key={states[currentStateIndex]} //restarts cycle
           >
             {states[currentStateIndex]}
           </p>
-          <p className="text-[#EBE9ED] text-[1.5rem] leading-[28.8px] font-normal my-5">
+          <p className="text-[#EBE9ED] text-[0.8rem] lg:text-[1.5rem] leading-[28.8px] font-normal my-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
             rutrum felis. Nulla nibh lorem, facilisis vel est at, vehicula
             dignissim lacus. Cras sagittis imperdiet dolor, eget accumsan leo
@@ -51,7 +51,7 @@ export default function ComingTo() {
             />
           </button>
         </div>
-        <div className="w-[594px] h-[554px]">
+        <div className="hidden md:block w-[594px] h-[554px]">
           <Image
             src={"/logo/navbar-logo_81x80.svg"}
             width={81}

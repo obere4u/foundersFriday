@@ -6,8 +6,8 @@ import { ArrowRight, PlayCircle } from "lucide-react";
 export default function LearningExperience() {
   return (
     <div className="pt-20 mb-20">
-      <MaxWidthWrapper className=" h-[564px] flex items-center space-x-[55px]">
-        <div className="min-w-[596px] h-[564px] rounded-[20px]">
+      <MaxWidthWrapper className=" max-h-[564px] md:flex items-center md:space-x-[55px]">
+        <div className="lg:min-w-[596px] h-[564px] rounded-[20px]">
           <Image
             src={"/experiencePic_795x564.jpg"}
             width={795}
@@ -16,7 +16,7 @@ export default function LearningExperience() {
             className="w-full object-conver rounded-[20px]"
           />
         </div>
-        <div className="max-w-[564px] -mt-28">
+        <div className="max-w-[564px] -mt-60 md:-mt-28">
           <p className="font-semibold text-[1.5rem] leading-[28.8px] text-black">
             At Founder’s Friday, Every Friday Is a Learning
             <br /> Experience!

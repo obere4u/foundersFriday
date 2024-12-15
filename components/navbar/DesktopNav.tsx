@@ -16,7 +16,7 @@ export default function DesktopNav() {
   const pathname = usePathname();
 
   return (
-    <MaxWidthWrapper className="flex items-center justify-between w-full">
+    <MaxWidthWrapper className="hidden md:flex items-center justify-between w-full">
       {/* logo */}
       <div className="flex items-center justify-between w-fit">
         <div className="w-[81px] h-20">
@@ -38,7 +38,7 @@ export default function DesktopNav() {
             <li
               key={index}
               className={cn(
-                "capitalize font-medium text-[1.5rem] leading-[28.8px] text-[#000000] hover:text-[#8300FF]",
+                "capitalize font-medium md:text-[1rem] 2xl:text-[1.5rem] leading-[28.8px] text-[#000000] hover:text-[#8300FF]",
                 item.title === "home" && pathname === "/" && "text-[#8300FF]"
               )}
             >

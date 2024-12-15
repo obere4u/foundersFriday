@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../MaxWidthWrapper";
 import { ArrowRight } from "lucide-react";
 
-export default function RegisterAndBe() {
+export default function DesktopViewRegister() {
   return (
-    <section className="mt-40 relative h-auto mb-[450px]">
+    <section className="hidden md:block mt-40 relative h-auto mb-[450px]">
       <MaxWidthWrapper>
         <h2 className="font-bold text-black text-[2.8125rem] leading-[56.25px] text-center">
           Register And Be Part of Our Community

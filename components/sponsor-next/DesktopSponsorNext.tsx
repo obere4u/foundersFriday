@@ -1,12 +1,12 @@
 import React from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../MaxWidthWrapper";
 import { cn } from "@/lib/util";
 import { whySponsorNext } from "@/constants";
 import { ArrowRight } from "lucide-react";
 
-export default function SponsorNext() {
+export default function DesktopSponsorNext() {
   return (
-    <div>
+    <div className="hidden md:block">
       <MaxWidthWrapper className="">
         <p className="text-[#5C00B3] text-[1.15rem] lg:text-[1.875rem] font-bold leading-[37.5px] capitalize">
           Sponsor The Next Friday
@@ -15,7 +15,7 @@ export default function SponsorNext() {
           Why Sponsor Founders Friday?
         </h2>
 
-        <div className=" pt-10 flex items-start space-x-[110px]">
+        <div className=" pt-10 flex flex-col md:flex-row items-start md:space-x-[110px]">
           {/* left */}
           <div className="max-w-[600px] w-full bg-[#FDF7FF] border border-[#CA92FF] shadow-elevated rounded-[20px] p-10 grid gap-10 grid-cols-2">
             {whySponsorNext.map((why, index) => (
@@ -38,7 +38,7 @@ export default function SponsorNext() {
             ))}
           </div>
           {/* right */}
-          <div className="max-w-[670px]">
+          <div className="max-w-[670px] w-full">
             <p className="font-bold capitalize text-[1.75rem] leading-[33.6px] text-[#0A0A0B]">
               How To Sponsor
             </p>
@@ -54,7 +54,7 @@ export default function SponsorNext() {
             </p>
             <form action="#">
               {/* name and company */}
-              <div className="my-10 flex item-center space-x-10">
+              <div className="my-10 flex flex-col md:flex-row item-center space-y-5 md:space-y-0 md:space-x-10">
                 {/* name */}
                 <div className="w-full flex flex-col space-y-[10px]">
                   <label
@@ -89,7 +89,7 @@ export default function SponsorNext() {
                 </div>
               </div>
               {/* email and phone */}
-              <div className="flex item-center space-x-10">
+              <div className="flex flex-col md:flex-row item-center space-y-5 md:space-y-0 md:space-x-10">
                 {/* email */}
                 <div className="w-full flex flex-col space-y-[10px]">
                   <label

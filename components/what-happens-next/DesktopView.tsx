@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../MaxWidthWrapper";
 import { ArrowRight } from "lucide-react";
 
-export default function WhatHappensAt() {
+export default function DesktopView() {
   return (
-    <section className="relative w-full mt-96">
+    <section className="hidden lg:block relative w-full mt-96">
       <div className="w-full">
         <Image
           src={"/imageTrail2_1910x1432.svg"}

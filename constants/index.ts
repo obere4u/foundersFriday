@@ -47,7 +47,7 @@ export const whySponsorNext: WhySponsorNextType[] = [
 export const reviews: ReviewType[] = [
   {
     reviewer: "Mr Belba Ngoy",
-    review: " Always a remarkable experience for my team and myself",
+    review: " Always good for my team and myself",
     image: "imagetrailpic_110x110.png",
   },
   {
@@ -57,7 +57,7 @@ export const reviews: ReviewType[] = [
   },
   {
     reviewer: "Mr Belba Ngoy",
-    review: " Always a remarkable experience for my team and myself",
+    review: " Wonderful Service",
     image: "imagetrailpic_110x110.png",
   },
 ];

@@ -5,8 +5,9 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutUs() {
   return (
-    <section className="mt-48 flex h-[564px] items-center space-x-20">
-      <div className="w-full">
+    <section className="mt-48 flex flex-col md:flex-row space-y-20 md:space-y-0 md:h-[564px] items-center md:space-x-20">
+      {/* left */}
+      <div className="w-full max-w-[698px]">
         <Image
           src={"/may-edition-about_698x564.png"}
           width={698}
@@ -15,18 +16,19 @@ export default function AboutUs() {
           className="w-full h-full"
         />
       </div>
-      <div className="relative border-[3px] rounded-[20px] h-[464px] w-full border-[#8300FF] pl-8">
+      {/* right */}
+      <div className="relative border-[3px] rounded-[20px] h-[464px] w-full border-[#8300FF] pl-4 md:pl-8">
         <div className="absolute -top-[34px] bottom-0 bg-[#FDF7FF]  w-full h-[504px]  flex flex-col ">
           <h2 className="text-3xl font-bold text-black capitalize text-[2.8rem] leading-[56.25px]">
             who are we?
           </h2>
-          <p className="mt-10 font-normal lg:text-[1.1rem] 2xl:text-[1.5rem] leading-[28.8px] text-[#8E8E93]">
+          <p className="mt-5 md:mt-10 font-normal text-[0.85rem] lg:text-[1.1rem] 2xl:text-[1.5rem] leading-[28.8px] w-[90%] text-[#8E8E93]">
             Born from the vibrant startup ecosystem of Abuja, we recognized the
             need for a consistent, high-quality networking platform where
             founders, innovators, and tech enthusiasts could connect, share
             ideas, and foster collaboration.
           </p>
-          <div className="flex items-center space-x-10 mt-10">
+          <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 items-center md:space-x-10 mt-5 md:mt-10">
             <button className="px-10 h-[75px] flex items-center justify-center space-x-4 bg-[#A649FF] rounded-full lg:text-[1.1rem] 2xl:text-[1.5rem] leading-[28.8px] hover:bg-opacity-85 ">
               Register
               <ArrowRight
@@ -45,7 +47,7 @@ export default function AboutUs() {
               />
             </button>
           </div>
-          <p className="mt-auto lg:text-[1.05rem] leading-[28.8px] font-bold text-black">
+          <p className="mt-auto text-[0.65rem] lg:text-[1.05rem] leading-[28.8px] font-bold text-black">
             Founder's Friday is more than just a meetup — it's a movement.
           </p>
         </div>
