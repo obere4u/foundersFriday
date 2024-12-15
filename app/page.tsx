@@ -1,7 +1,10 @@
 import AboutUs from "@/components/AboutUs";
 import ComingTo from "@/components/ComingTo";
+import FAQs from "@/components/FAQs";
+import LearningExperience from "@/components/LearningExperience";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import RegisterAndBe from "@/components/RegisterAndBe";
+import Reviews from "@/components/Reviews";
 import SponsorNext from "@/components/SponsorNext";
 import WhatHappensAt from "@/components/WhatHappensAt";
 import { sponsorsImages } from "@/constants";
@@ -14,13 +17,13 @@ export default function Home() {
       <MaxWidthWrapper className="w-full flex-1 relative">
         {/* left side */}
         <section className=" flex ">
-          <main className="pl-14 pt-[200px] z-[90] w-full animate-slideInLeft flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          <main className="pl-14 pt-[220px] z-[90] w-full animate-slideInLeft flex flex-col gap-8 row-start-2 items-center sm:items-start">
             <div className="max-w-[822px] ">
               <p className="first-letter:capitalize font-semibold lg:text-[0.9rem] 2xl:text-[1.125rem] leading-[21.6px] text-background">
                 Join our premier monthly meetup for startup founders and tech
                 visionaries
               </p>
-              <h1 className="mb-5 capitalize text-[#5C00B3] font-bold text-[1.8rem] md:text-[2rem] lg:text-[2.55rem] zxl:text-[3.125rem] leading-[62.5px]">
+              <h1 className="mb-5 capitalize text-[#5C00B3] font-bold text-[1.8rem] md:text-[2rem] lg:text-[2.33rem] 2xl:text-[3.125rem] leading-[62.5px]">
                 Connect, Collaborate, Innovate!
               </h1>
               <p className="text-[1rem] md:text-[1.125rem] 2xl:text-[1.5rem] text-background font-normal leading-[36px] w-[622px]">
@@ -133,6 +136,9 @@ export default function Home() {
       <SponsorNext />
       <ComingTo />
       <RegisterAndBe />
+      <LearningExperience />
+      <Reviews />
+      <FAQs />
     </div>
   );
 }

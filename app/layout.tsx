@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { montserrat, plusJakartaSans } from "@/lib/font";
+import { montserrat } from "@/lib/font";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat} ${plusJakartaSans} min-h-screen flex flex-col bg-[#FDF7FF] antialiased`}
+        className={`${montserrat.className}  min-h-screen flex flex-col bg-[#FDF7FF] antialiased`}
       >
         <Header />
         {children}

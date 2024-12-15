@@ -15,9 +15,9 @@ export default function SponsorNext() {
           Why Sponsor Founders Friday?
         </h2>
 
-        <div className="pl-20 pt-10 flex items-start space-x-[110px]">
+        <div className=" pt-10 flex items-start space-x-[110px]">
           {/* left */}
-          <div className="max-w-[600px] bg-[#FDF7FF] border border-[#CA92FF] shadow-elevated rounded-[20px] p-10 grid gap-5 grid-cols-2">
+          <div className="max-w-[600px] w-full bg-[#FDF7FF] border border-[#CA92FF] shadow-elevated rounded-[20px] p-10 grid gap-10 grid-cols-2">
             {whySponsorNext.map((why, index) => (
               <div
                 key={why.title + index}
@@ -28,7 +28,7 @@ export default function SponsorNext() {
                     : "bg-[#EDDBFF]"
                 )}
               >
-                <h2 className="capitalize text-[#0A0A0B] text-[1.5rem] text-center leading-[28.8px] px-2 font-bold ">
+                <h2 className="capitalize text-[#0A0A0B] text-[1.5rem] text-center leading-[28.8px]  font-bold ">
                   {why.title}
                 </h2>
                 <p className="font-normal text-[1rem] text-center text-[#3C3641] leading-[21.6px] mt-5 px-2">
@@ -42,7 +42,7 @@ export default function SponsorNext() {
             <p className="font-bold capitalize text-[1.75rem] leading-[33.6px] text-[#0A0A0B]">
               How To Sponsor
             </p>
-            <em className="text-[#605668] text-[1.5rem] font-normal">
+            <em className="text-[#605668] text-[1.5rem] font-normal my-1">
               Ready to Make an Impact?
             </em>
             <p className="text-[1.125rem] font-normal leading-[21.6px] text-[#2C2830]">

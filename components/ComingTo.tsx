@@ -19,7 +19,7 @@ export default function ComingTo() {
 
 
   return (
-    <div className='mt-40 py-40 px-10 bg-[url("/guyonmic_1728x808.png")] bg-cover bg-no-repeat max-w-[1728px] mx-auto h-[808px]'>
+    <div className='mt-40 py-20 px-10 bg-[url("/guyonmic_1728x808.png")] bg-cover bg-no-repeat max-w-[1728px] mx-auto h-[808px]'>
       <div className="flex items-center space-x-56">
         <div className="w-[804px]">
           <p className="text-[#EBE9ED] text-[3rem] font-bold leading-[62.5px]">
@@ -32,7 +32,7 @@ export default function ComingTo() {
           >
             {states[currentStateIndex]}
           </p>
-          <p className="text-[#EBE9ED] text-[1.5rem] leading-[28.8px] font-normal my-10">
+          <p className="text-[#EBE9ED] text-[1.5rem] leading-[28.8px] font-normal my-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
             rutrum felis. Nulla nibh lorem, facilisis vel est at, vehicula
             dignissim lacus. Cras sagittis imperdiet dolor, eget accumsan leo

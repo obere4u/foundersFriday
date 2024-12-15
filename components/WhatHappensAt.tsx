@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function WhatHappensAt() {
   return (
-    <section className="relative w-full pt-96">
+    <section className="relative w-full mt-96">
       <div className="w-full">
         <Image
           src={"/imageTrail2_1910x1432.svg"}
@@ -15,7 +15,7 @@ export default function WhatHappensAt() {
           className="w-full"
         />
       </div>
-      <MaxWidthWrapper className="left-[50%] w-full transform -translate-x-[50%] absolute top-[50%]">
+      <MaxWidthWrapper className="left-[50%] w-full transform -translate-x-[50%] absolute top-[35%]">
         {/* left side */}
         <div className="w-[804px] ">
           <div className="max-w-[603px]">

@@ -1,4 +1,11 @@
-import { NavbarItemType, SponsorsImageType, WhySponsorNextType } from "@/types";
+import {
+  FAQsType,
+  NavbarItemType,
+  ReviewType,
+  SocialMediaType,
+  SponsorsImageType,
+  WhySponsorNextType,
+} from "@/types";
 
 export const navbarItems: NavbarItemType[] = [
   { title: "home", href: "/" },
@@ -35,4 +42,61 @@ export const whySponsorNext: WhySponsorNextType[] = [
     description:
       "Gain exposure to a targeted audience of young professionals and entrepreneurs.",
   },
+];
+
+export const reviews: ReviewType[] = [
+  {
+    reviewer: "Mr Belba Ngoy",
+    review: " Always a remarkable experience for my team and myself",
+    image: "imagetrailpic_110x110.png",
+  },
+  {
+    reviewer: "Mr Belba Ngoy",
+    review: " Always a remarkable experience for my team and myself",
+    image: "imagetrailpic_110x110.png",
+  },
+  {
+    reviewer: "Mr Belba Ngoy",
+    review: " Always a remarkable experience for my team and myself",
+    image: "imagetrailpic_110x110.png",
+  },
+];
+
+export const FAQS: FAQsType[] = [
+  {
+    question: "Lorem ipsum dolor sit amet?",
+    answer:
+      "consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+  },
+  {
+    question: " Aenean commodo ligula eget dolor?",
+    answer:
+      "consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+  },
+  {
+    question: "Lorem Aenean commodo ligula eget dolor?",
+    answer:
+      "consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+  },
+  {
+    question: "onsectetuer adipiscing elit?",
+    answer:
+      "consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+  },
+  {
+    question: "Commodo ligula eget dolor?",
+    answer:
+      "consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+  },
+  {
+    question: "Aenean commodo ligula eget dolor?",
+    answer:
+      "consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+  },
+];
+
+export const socialMediaLinks: SocialMediaType[] = [
+  { image: "facebook.svg", title: "facebook" },
+  { image: "linkedin.svg", title: "linkedin" },
+  { image: "instagram.svg", title: "instagram" },
 ];

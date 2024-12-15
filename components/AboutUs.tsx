@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutUs() {
   return (
-    <section className="pt-40 flex h-[564px] items-center space-x-20">
+    <section className="mt-48 flex h-[564px] items-center space-x-20">
       <div className="w-full">
         <Image
           src={"/may-edition-about_698x564.png"}
@@ -45,7 +45,7 @@ export default function AboutUs() {
               />
             </button>
           </div>
-          <p className="mt-auto lg:text-[1.2rem]  leading-[28.8px] font-bold text-black">
+          <p className="mt-auto lg:text-[1.05rem] leading-[28.8px] font-bold text-black">
             Founder's Friday is more than just a meetup — it's a movement.
           </p>
         </div>
