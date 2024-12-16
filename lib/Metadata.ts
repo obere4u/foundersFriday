@@ -9,7 +9,7 @@ type PageMetadataProps = {
 export function generateMetadata({
   title = "Founder's Friday Movement",
   description = "A platform fostering collaboration among founders, innovators, and tech enthusiasts in Abuja's vibrant startup ecosystem.",
-  path = "",
+  path = "/",
 }: PageMetadataProps = {}): Metadata {
   const baseTitle = "Founder's Friday";
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`;
@@ -59,11 +59,7 @@ export function generateMetadata({
         "max-image-preview": "large",
         "max-snippet": -1,
       },
-    },
-    viewport: {
-      width: "device-width",
-      initialScale: 1,
-    },
+    }
   };
 }
 
