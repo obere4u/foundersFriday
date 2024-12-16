@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { montserrat } from "@/lib/font";
 import Header from "@/components/navbar/Navbar";
