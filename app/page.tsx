@@ -28,10 +28,10 @@ export default function Home() {
               </h1>
               <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] text-left 2xl:text-[1.5rem] text-background font-normal leading-[1.6] sm:leading-[36px] mx-auto sm:mx-0 w-full max-w-[622px]">
                 Every last Friday of the month, we bring together the brightest
-                minds in our local tech ecosystem. Whether you're a seasoned
-                entrepreneur or just starting your journey, Founder's Friday is
-                your launchpad for new ideas, valuable connections, and
-                game-changing opportunities.
+                minds in our local tech ecosystem. Whether you&apos;re a
+                seasoned entrepreneur or just starting your journey,
+                Founder&apos;s Friday is your launchpad for new ideas, valuable
+                connections, and game-changing opportunities.
               </p>
             </div>
             <div className="w-full sm:w-auto">

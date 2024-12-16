@@ -1,5 +1,4 @@
 import React from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
@@ -48,7 +47,8 @@ export default function AboutUs() {
             </button>
           </div>
           <p className="mt-auto text-[0.65rem] sm:text-[1.1rem] lg:text-[1.05rem] leading-[28.8px] font-bold text-black">
-            Founder's Friday is more than just a meetup — it's a movement.
+            Founder&apos;s Friday is more than just a meetup — it&apos;s a
+            movement.
           </p>
         </div>
       </div>

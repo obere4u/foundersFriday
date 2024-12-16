@@ -13,7 +13,7 @@ export default function MobileNav() {
   return (
     <MaxWidthWrapper className="lg:hidden flex items-center justify-between px-4 py-4 relative">
       {/* Logo */}
-      <div className="w-[40px] h-[40px]">
+      <Link href={"/"} className="w-[40px] h-[40px]">
         <Image
           src={"/logo/navbar-logo_81x80.svg"}
           width={40}
@@ -21,7 +21,7 @@ export default function MobileNav() {
           alt="Founders Friday logo"
           className="w-full h-full object-cover"
         />
-      </div>
+      </Link>
 
       {/* Register button */}
       <button className="flex items-center justify-center capitalize font-medium text-[1rem] leading-[24px] text-[#9E8CAF] h-[40px] w-[120px] border-[2px] border-[#9E8CAF] rounded-[12px]">

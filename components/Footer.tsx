@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="mt-auto pt-5 border-t border-[#75687E]">
       <MaxWidthWrapper>
-        <div className="flex items-center space-x-1 w-fit">
+        <Link href={"/"} className="flex items-center space-x-1 w-fit">
           <div className="w-[81px] h-20 ">
             <Image
               src={"/logo/navbar-logo_81x80.svg"}
@@ -24,13 +24,13 @@ export default function Footer() {
             />
           </div>
           <p className="capitalize font-bold drop-shadow-md text-black text-[1.75rem] leading-[33.6px]">
-            Founder's
+            Founder&apos;s
             <br /> Friday
           </p>
-        </div>
+        </Link>
         <div className="max-w-[1045px] mt-20 mx-auto flex flex-col items-center justify-center space-y-10">
           <p className="capitalize text-center font-bold text-[1.5rem] md:text-[2.65rem] leading-[56.25px] text-black">
-            Want To Be A Part Of Abuja’s Biggest Tech Community?
+            Want To Be A Part Of Abuja&apos;s Biggest Tech Community?
           </p>
           <button
             type="button"
@@ -51,8 +51,8 @@ export default function Footer() {
           <div className="flex items-center space-x-4 mt-5 md:mt-0">
             {socialMediaLinks.map((socialMediaLink, index) => (
               <a
-              key={socialMediaLink.title + index}
-              href="#"
+                key={socialMediaLink.title + index}
+                href="#"
                 className="rounded-full size-[45px] bg-[#9524FF] flex items-center justify-center"
               >
                 <Image

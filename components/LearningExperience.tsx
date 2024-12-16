@@ -1,7 +1,7 @@
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { ArrowRight} from "lucide-react";
 
 export default function LearningExperience() {
   return (
@@ -18,11 +18,11 @@ export default function LearningExperience() {
         </div>
         <div className="max-w-[564px] -mt-60 md:-mt-28">
           <p className="font-semibold text-[1.5rem] leading-[28.8px] text-black">
-            At Founder’s Friday, Every Friday Is a Learning Experience!
+            At Founder&apos;s Friday, Every Friday Is a Learning Experience!
           </p>
           <p className="my-10 text-[1rem] font-semibold leading-[21.6px] text-black">
             Join us in our mission to transform ideas into impact and shape the
-            future of Nigeria’s startup landscape.
+            future of Nigeria&apos;s startup landscape.
           </p>
           <div className="w-fit">
             <button

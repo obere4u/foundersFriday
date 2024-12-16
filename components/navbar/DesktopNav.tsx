@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function DesktopNav() {
   return (
     <MaxWidthWrapper className="hidden lg:flex items-center justify-between w-full">
       {/* logo */}
-      <div className="flex items-center justify-between w-fit">
+      <Link href={"/"} className="flex items-center justify-between w-fit">
         <div className="w-[81px] h-20">
           <Image
             src={"/logo/navbar-logo_81x80.svg"}
@@ -29,9 +29,9 @@ export default function DesktopNav() {
           />
         </div>
         <p className="capitalize font-bold drop-shadow-md text-black text-[1.75rem] leading-[33.6px]">
-          Founder's Friday
+          Founder&apos;s Friday
         </p>
-      </div>
+      </Link>
       <div className="flex items-center space-x-20">
         <ul className="flex items-center space-x-8">
           {navbarItems.map((item, index) => (
