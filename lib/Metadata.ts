@@ -11,6 +11,17 @@ export function generateMetadata({
   description = "A platform fostering collaboration among founders, innovators, and tech enthusiasts in Abuja's vibrant startup ecosystem.",
   path = "",
 }: PageMetadataProps = {}): Metadata {
+  // Normalize the path by removing leading and trailing slashes
+  const normalizedPath = path.replace(/^\/|\/$/g, "");
+
+  // Base URL with consistent trailing slash
+  const baseUrl = "https://founders-friday-phi.vercel.app/";
+
+  // full URL
+  const fullUrl = new URL(normalizedPath, baseUrl)
+    .toString()
+    .replace(/\/+$/, "/");
+
   const baseTitle = "Founder's Friday";
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`;
 
@@ -31,13 +42,12 @@ export function generateMetadata({
     openGraph: {
       title: fullTitle,
       description: description,
-      url: `https://founders-friday-phi.vercel.app${path || "/"}`,
-
+      url: fullUrl,
       siteName: baseTitle,
       images: [
         {
-          url: "https://founders-friday-phi.vercel.app/og-image.png",
-          secureUrl: "https://founders-friday-phi.vercel.app/og-image.png",
+          url: new URL("/og-image.png", baseUrl).toString(),
+          secureUrl: new URL("/og-image.png", baseUrl).toString(),
           width: 1200,
           height: 630,
         },
@@ -49,9 +59,8 @@ export function generateMetadata({
       card: "summary_large_image",
       title: fullTitle,
       description: description,
-      images: ["https://founders-friday-phi.vercel.app/og-image.png"],
+      images: [new URL("/og-image.png", baseUrl).toString()],
     },
-
     robots: {
       index: true,
       follow: true,
@@ -62,6 +71,9 @@ export function generateMetadata({
         "max-image-preview": "large",
         "max-snippet": -1,
       },
+    },
+    alternates: {
+      canonical: fullUrl,
     },
   };
 }
