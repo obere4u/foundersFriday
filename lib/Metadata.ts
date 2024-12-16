@@ -31,7 +31,7 @@ export function generateMetadata({
     openGraph: {
       title: fullTitle,
       description: description,
-      url: `https://founders-friday-phi.vercel.app/${path}`.replace(/\/+$/, ""),
+      url: `https://founders-friday-phi.vercel.app${path}`.replace(/\/+$/, ""),
       siteName: baseTitle,
       images: [
         {
