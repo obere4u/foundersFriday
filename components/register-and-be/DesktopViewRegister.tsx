@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function DesktopViewRegister() {
   return (
-    <section className="hidden md:block mt-40 relative h-auto mb-[450px]">
+    <section className="hidden lg:block mt-40 relative h-auto mb-[450px]">
       <MaxWidthWrapper>
         <h2 className="font-bold text-black text-[2.8125rem] leading-[56.25px] text-center">
           Register And Be Part of Our Community

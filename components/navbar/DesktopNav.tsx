@@ -16,7 +16,7 @@ export default function DesktopNav() {
   const pathname = usePathname();
 
   return (
-    <MaxWidthWrapper className="hidden md:flex items-center justify-between w-full">
+    <MaxWidthWrapper className="hidden lg:flex items-center justify-between w-full">
       {/* logo */}
       <div className="flex items-center justify-between w-fit">
         <div className="w-[81px] h-20">

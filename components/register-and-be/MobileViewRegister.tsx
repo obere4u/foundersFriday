@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function MobileViewRegister() {
   return (
-    <section className="md:hidden mt-20 ">
+    <section className="lg:hidden mt-20 ">
       <MaxWidthWrapper className="pb-10">
         <h2 className="font-bold text-black text-[1.875rem] leading-[2.25rem] text-center">
           Register And Be Part of Our Community
@@ -26,7 +26,7 @@ export default function MobileViewRegister() {
           className="w-full h-auto object-cover"
         />
       </div>
-      <div className="w-full flex items-center justify-center space-x-8 -mt-24">
+      <div className="w-full flex items-center justify-center space-x-8 -mt-24 md:-mt-32">
         <div className="bg-transparent border-[3px] border-[#FF3B30] flex items-center justify-center rounded-full size-[108px]">
           <div className="size-[80.4px] rounded-full">
             <Image

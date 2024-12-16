@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function MobileSponsorNext() {
   return (
-    <div className="px-4 py-6 mt-10">
+    <div className="px-4 py-6 mt-10 md:hidden">
       <MaxWidthWrapper className="flex flex-col items-center w-full">
         <p className="text-[#5C00B3] text-[1rem] font-bold leading-[24px] capitalize self-start ">
           Sponsor The Next Friday
@@ -52,7 +52,7 @@ export default function MobileSponsorNext() {
           <form className="space-y-4">
             <div className="mb-5">
               {/* Name and Company */}
-              <div className="flex flex-col space-y-4">
+              <div className="flex flex-col space-y-4 mb-4">
                 <div className="w-full flex flex-col">
                   <label
                     htmlFor="name"

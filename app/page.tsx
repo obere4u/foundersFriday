@@ -17,16 +17,16 @@ export default function Home() {
       <MaxWidthWrapper className="w-full flex-1 relative">
         {/* left side */}
         <section className=" flex ">
-          <main className="px-4 sm:pl-14 pt-[150px] sm:pt-[220px] z-[90] w-full animate-slideInLeft flex flex-col gap-6 sm:gap-8 items-center sm:items-start">
+          <main className="px-4 sm:pl-14 pt-[150px] sm:pt-[200px] z-[90] w-full animate-slideInLeft flex flex-col gap-6 sm:gap-8 items-center sm:items-start">
             <div className="max-w-full sm:max-w-[822px] text-center sm:text-left">
-              <p className="first-letter:capitalize font-semibold text-[0.875rem] sm:text-[1rem] lg:text-[0.9rem] 2xl:text-[1.125rem] leading-[21.6px] text-background">
+              <p className="first-letter:capitalize font-semibold text-[0.875rem] lg:text-[0.9rem] 2xl:text-[1.125rem] leading-[21.6px] text-background">
                 Join our premier monthly meetup for startup founders and tech
                 visionaries
               </p>
-              <h1 className="mb-4 sm:mb-5 capitalize text-[#5C00B3] font-bold text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.33rem] 2xl:text-[3.125rem] leading-[1.2] sm:leading-[62.5px]">
+              <h1 className="mb-4 mt-3 md:mt-0 sm:mb-5 capitalize text-[#5C00B3] font-bold text-[1.5rem] sm:text-[2rem] md:text-[3rem] lg:text-[2.33rem] 2xl:text-[3.125rem] leading-[1.2] sm:leading-[62.5px]">
                 Connect, Collaborate, Innovate!
               </h1>
-              <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] 2xl:text-[1.5rem] text-background font-normal leading-[1.6] sm:leading-[36px] mx-auto sm:mx-0 max-w-full sm:w-[622px]">
+              <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] text-left 2xl:text-[1.5rem] text-background font-normal leading-[1.6] sm:leading-[36px] mx-auto sm:mx-0 w-full max-w-[622px]">
                 Every last Friday of the month, we bring together the brightest
                 minds in our local tech ecosystem. Whether you're a seasoned
                 entrepreneur or just starting your journey, Founder's Friday is
@@ -51,7 +51,7 @@ export default function Home() {
               <p className="mt-4 sm:mt-5 mb-10 sm:mb-20 text-[0.875rem] sm:text-base text-[#6750A4] font-semibold leading-[1.2] w-[80%] md:w-full sm:leading-[19.2px] drop-shadow-lg">
                 Join Us for our next meetup on the 26th of July 2024
               </p>
-              <div className="grid grid-cols-3 sm:flex sm:items-center sm:space-x-4 gap-4 w-full">
+              <div className="flex items-center md:space-x-2">
                 {sponsorsImages.map((sponsorsImage, index) => (
                   <div
                     key={sponsorsImage.src + index}
@@ -67,7 +67,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="flex flex-wrap items-center justify-center sm:justify-start space-x-2 mt-5">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start space-x-2 mt-10 md:mt-5">
                 <p className="text-[0.75rem] sm:text-[0.875rem] text-background font-bold leading-[16.8px]">
                   Become a collaborator today
                 </p>

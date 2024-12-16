@@ -11,7 +11,7 @@ export default function MobileNav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <MaxWidthWrapper className="flex items-center justify-between px-4 py-4 relative">
+    <MaxWidthWrapper className="lg:hidden flex items-center justify-between px-4 py-4 relative">
       {/* Logo */}
       <div className="w-[40px] h-[40px]">
         <Image
@@ -24,7 +24,7 @@ export default function MobileNav() {
       </div>
 
       {/* Register button */}
-      <button className="flex items-center justify-center capitalize font-medium text-[1rem] leading-[24px] text-[#9E8CAF] h-[40px] w-[120px] border-[2px] border-[#9E8CAF] rounded-[12px] md:hidden">
+      <button className="flex items-center justify-center capitalize font-medium text-[1rem] leading-[24px] text-[#9E8CAF] h-[40px] w-[120px] border-[2px] border-[#9E8CAF] rounded-[12px]">
         <span>Register</span>
         <ArrowRight
           color="#9E8CAF"
@@ -34,7 +34,7 @@ export default function MobileNav() {
       </button>
 
       {/* Hamburger Menu */}
-      <div className="md:hidden">
+      <div className="">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"

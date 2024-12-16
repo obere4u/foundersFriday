@@ -18,8 +18,7 @@ export default function LearningExperience() {
         </div>
         <div className="max-w-[564px] -mt-60 md:-mt-28">
           <p className="font-semibold text-[1.5rem] leading-[28.8px] text-black">
-            At Founder’s Friday, Every Friday Is a Learning
-            <br /> Experience!
+            At Founder’s Friday, Every Friday Is a Learning Experience!
           </p>
           <p className="my-10 text-[1rem] font-semibold leading-[21.6px] text-black">
             Join us in our mission to transform ideas into impact and shape the

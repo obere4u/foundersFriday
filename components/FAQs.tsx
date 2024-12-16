@@ -17,7 +17,7 @@ export default function FAQs() {
       <h2 className="text-black font-bold text-[2.65rem] leading-[56.25px]">
         FAQs
       </h2>
-      <div className="mt-10 md:ml-20 grid md:grid-cols-2 gap-10">
+      <div className="mt-10 lg:ml-20 grid lg:grid-cols-2 gap-10">
         {FAQS.map((FAQ, index) => (
           <div
             key={FAQ.question + index}

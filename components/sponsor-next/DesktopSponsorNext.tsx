@@ -6,18 +6,18 @@ import { ArrowRight } from "lucide-react";
 
 export default function DesktopSponsorNext() {
   return (
-    <div className="hidden md:block">
+    <div className="hidden md:block mt-20">
       <MaxWidthWrapper className="">
-        <p className="text-[#5C00B3] text-[1.15rem] lg:text-[1.875rem] font-bold leading-[37.5px] capitalize">
+        <p className="text-[#5C00B3] text-[1.15rem] lg:text-[1.875rem] font-bold lg:leading-[37.5px] capitalize">
           Sponsor The Next Friday
         </p>
-        <h2 className="max-w-[603px] mx-auto my-10 font-bold text-[1.8rem] lg:text-[3.4375rem] text-black leading-[68.75px] capitalize ">
+        <h2 className="max-w-[603px] mx-auto my-10 font-bold text-[1.8rem] lg:text-[3.4375rem] text-black lg:leading-[68.75px] capitalize ">
           Why Sponsor Founders Friday?
         </h2>
 
-        <div className=" pt-10 flex flex-col md:flex-row items-start md:space-x-[110px]">
+        <div className=" pt-10 flex md:flex-col lg:flex-row items-start space-y-10 lg:space-y-0 lg:space-x-[110px]">
           {/* left */}
-          <div className="max-w-[600px] w-full bg-[#FDF7FF] border border-[#CA92FF] shadow-elevated rounded-[20px] p-10 grid gap-10 grid-cols-2">
+          <div className="max-w-[600px] mx-auto w-full bg-[#FDF7FF] border border-[#CA92FF] shadow-elevated rounded-[20px] p-10 grid gap-10 grid-cols-2">
             {whySponsorNext.map((why, index) => (
               <div
                 key={why.title + index}

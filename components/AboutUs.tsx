@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutUs() {
   return (
-    <section className="mt-48 flex flex-col md:flex-row space-y-20 md:space-y-0 md:h-[564px] items-center md:space-x-20">
+    <section className="mt-48 flex flex-col lg:flex-row space-y-20 lg:space-y-0 lg:h-[564px] items-center lg:space-x-20">
       {/* left */}
       <div className="w-full max-w-[698px]">
         <Image
@@ -28,7 +28,7 @@ export default function AboutUs() {
             founders, innovators, and tech enthusiasts could connect, share
             ideas, and foster collaboration.
           </p>
-          <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 items-center md:space-x-10 mt-5 md:mt-10">
+          <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 items-center sm:space-x-10 mt-5 sm:mt-20 md:mt-10">
             <button className="px-10 h-[75px] flex items-center justify-center space-x-4 bg-[#A649FF] rounded-full lg:text-[1.1rem] 2xl:text-[1.5rem] leading-[28.8px] hover:bg-opacity-85 ">
               Register
               <ArrowRight
@@ -47,7 +47,7 @@ export default function AboutUs() {
               />
             </button>
           </div>
-          <p className="mt-auto text-[0.65rem] lg:text-[1.05rem] leading-[28.8px] font-bold text-black">
+          <p className="mt-auto text-[0.65rem] sm:text-[1.1rem] lg:text-[1.05rem] leading-[28.8px] font-bold text-black">
             Founder's Friday is more than just a meetup — it's a movement.
           </p>
         </div>
