@@ -33,13 +33,7 @@ export function generateMetadata({
       description: description,
       url: `https://founders-friday-phi.vercel.app/${path}`.replace(/\/+$/, ""),
       siteName: baseTitle,
-      images: [
-        {
-          url: "https://founders-friday-phi.vercel.app/og-image.png",
-          width: 1200,
-          height: 630,
-        },
-      ],
+      images: ["https://founders-friday-phi.vercel.app/og-image.png"],
       locale: "en_US",
       type: "website",
     },
@@ -49,6 +43,7 @@ export function generateMetadata({
       description: description,
       images: ["https://founders-friday-phi.vercel.app/og-image.png"],
     },
+
     robots: {
       index: true,
       follow: true,
@@ -59,7 +54,7 @@ export function generateMetadata({
         "max-image-preview": "large",
         "max-snippet": -1,
       },
-    }
+    },
   };
 }
 
