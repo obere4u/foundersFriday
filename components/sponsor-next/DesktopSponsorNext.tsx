@@ -17,7 +17,7 @@ export default function DesktopSponsorNext() {
 
         <div className=" pt-10 flex md:flex-col lg:flex-row items-start space-y-10 lg:space-y-0 lg:space-x-[110px]">
           {/* left */}
-          <div className="animate-bounce max-w-[600px] mx-auto w-full bg-[#FDF7FF] border border-[#CA92FF] shadow-elevated rounded-[20px] p-10 grid gap-10 grid-cols-2">
+          <div className="animate-smoothBounce max-w-[600px] mx-auto w-full bg-[#FDF7FF] border border-[#CA92FF] shadow-elevated rounded-[20px] p-10 grid gap-10 grid-cols-2">
             {whySponsorNext.map((why, index) => (
               <div
                 key={why.title + index}

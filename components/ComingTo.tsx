@@ -21,7 +21,7 @@ export default function ComingTo() {
     <div className='mt-40 py-20 border px-10 bg-[url("/guyonmic_1728x808.png")] bg-center md:bg-cover bg-no-repeat max-w-[1728px] mx-auto max-h-[808px]'>
       <div className="lg:flex items-center 2xl:space-x-56">
         <div className="2xl:w-[804px] lg:w-[50%] w-full">
-          <p className="text-[#EBE9ED] text-[2rem] lg:text-[3rem] font-bold lg:leading-[62.5px]">
+          <p className="text-[#EBE9ED] text-[2rem] lg:text-[3.5rem] font-bold lg:leading-[62.5px]">
             Founders Friday is coming to
           </p>
 

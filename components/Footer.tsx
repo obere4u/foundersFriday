@@ -34,7 +34,7 @@ export default function Footer() {
           </p>
           <button
             type="button"
-            className="cursor-pointer flex items-center space-x-[10px] text-[#9524FF] md:text-[1.5rem] leading-[33.6px] font-normal capitalize border-[2px] border-[#9524FF] p-5 rounded-[40px] hover:text-opacity-75 transition-colors duration-100 ease-in-out group group-hover:text-opacity-75"
+            className="cursor-pointer flex items-center space-x-[10px] text-[#9524FF] lg:text-[1.5rem] leading-[33.6px] font-normal capitalize border-[2px] border-[#9524FF] p-5 rounded-[40px] hover:text-opacity-75 transition-colors duration-100 ease-in-out group group-hover:text-opacity-75"
           >
             <span> Register For Our Next Event</span>
             <Image
@@ -47,7 +47,7 @@ export default function Footer() {
           </button>
         </div>
         {/* socials and nav links */}
-        <div className="mt-40 py-5 border-t border-[#75687E] flex flex-col-reverse md:space-y-0 md:flex-row items-center justify-between">
+        <div className="mt-40 py-5 border-t border-[#75687E] flex flex-col-reverse md:space-y-0 md:flex-row md:items-center justify-between">
           <div className="flex items-center space-x-4 mt-5 md:mt-0">
             {socialMediaLinks.map((socialMediaLink, index) => (
               <a
@@ -65,7 +65,7 @@ export default function Footer() {
             ))}
           </div>
           {/* navigation links */}
-          <ul className="flex items-center space-x-8">
+          <ul className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:items-center md:space-x-8">
             {navbarItems.map((item, index) => (
               <li
                 key={index}

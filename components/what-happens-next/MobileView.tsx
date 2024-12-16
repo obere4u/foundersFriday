@@ -11,7 +11,7 @@ export default function MobileView() {
       <MaxWidthWrapper className="flex flex-col items-center w-full">
         {/* Top images */}
         <div className="flex items-center justify-center space-x-4 mb-8">
-          <div className="animate-bounce w-[180px] h-[225px]">
+          <div className="animate-smoothBounce w-[180px] h-[225px]">
             <Image
               src={"/whatHappensImage1_361x450.png"}
               width={180}
@@ -20,7 +20,7 @@ export default function MobileView() {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="animate-bounce w-[190px] h-[235px]">
+          <div className="animate-smoothBounce w-[190px] h-[235px]">
             <Image
               src={"/whatHappensImage2_380x470.png"}
               width={190}

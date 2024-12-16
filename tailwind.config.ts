@@ -29,14 +29,14 @@ export default {
           "0%": { transform: "translateY(10%)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
-        bounce: {
+        smoothBounce: {
           "0%, 100%": {
-            transform: "translateY(-10px)",
-            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+            transform: "translateY(0)",
+            animationTimingFunction: "cubic-bezier(0.45, 0, 0.55, 1)",
           },
           "50%": {
-            transform: "translateY(0)",
-            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+            transform: "translateY(-8px)",
+            animationTimingFunction: "cubic-bezier(0.45, 0, 0.55, 1)",
           },
         },
       },
@@ -45,7 +45,7 @@ export default {
         slideInLeft: "slideInLeft 0.5s ease-out",
         fadeIn: "fadeIn 0.5s ease-in",
         slideUp: "slideUp 0.5s ease-in-out",
-        bounce: "bounce 1s infinite",
+        smoothBounce: "smoothBounce 2.5s cubic-bezier(0.45, 0, 0.55, 1) infinite",
       },
       boxShadow: {
         elevated: "0 8px 16px rgba(0, 0, 0, 0.15)",

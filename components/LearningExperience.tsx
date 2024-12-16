@@ -6,7 +6,7 @@ import { ArrowRight} from "lucide-react";
 export default function LearningExperience() {
   return (
     <div className="pt-20 mb-20">
-      <MaxWidthWrapper className=" max-h-[564px] md:flex items-center md:space-x-[55px]">
+      <MaxWidthWrapper className=" max-h-[564px] flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:items-center lg:space-x-[55px]">
         <div className="lg:min-w-[596px] h-[564px] rounded-[20px]">
           <Image
             src={"/experiencePic_795x564.jpg"}
@@ -16,7 +16,7 @@ export default function LearningExperience() {
             className="w-full object-conver rounded-[20px]"
           />
         </div>
-        <div className="max-w-[564px] -mt-60 md:-mt-28">
+        <div className="max-w-[564px] lg:-mt-28">
           <p className="font-semibold text-[1.5rem] leading-[28.8px] text-black">
             At Founder&apos;s Friday, Every Friday Is a Learning Experience!
           </p>

@@ -47,7 +47,7 @@ export default function DesktopView() {
         </div>
         {/* right side */}
 
-        <div className="animate-bounce absolute top-0 right-5 max-w-[361px]">
+        <div className="animate-smoothBounce absolute top-0 right-5 max-w-[361px]">
           <Image
             src={"/whatHappensImage1_361x450.png"}
             width={361}
@@ -56,7 +56,7 @@ export default function DesktopView() {
             className="object-cover"
           />
         </div>
-        <div className="animate-bounce absolute top-48 right-[169px] max-w-[380px]">
+        <div className="animate-smoothBounce absolute top-48 right-[169px] max-w-[380px]">
           <Image
             src={"/whatHappensImage2_380x470.png"}
             width={361}

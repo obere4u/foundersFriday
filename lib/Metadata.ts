@@ -9,7 +9,7 @@ type PageMetadataProps = {
 export function generateMetadata({
   title = "Founder's Friday Movement",
   description = "A platform fostering collaboration among founders, innovators, and tech enthusiasts in Abuja's vibrant startup ecosystem.",
-  path = "/",
+  path = "",
 }: PageMetadataProps = {}): Metadata {
   const baseTitle = "Founder's Friday";
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`;
@@ -33,7 +33,14 @@ export function generateMetadata({
       description: description,
       url: `https://founders-friday-phi.vercel.app/${path}`.replace(/\/+$/, ""),
       siteName: baseTitle,
-      images: ["https://founders-friday-phi.vercel.app/og-image.png"],
+      images: [
+        {
+          url: "https://founders-friday-phi.vercel.app/og-image.png",
+          secureUrl: "https://founders-friday-phi.vercel.app/og-image.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
       locale: "en_US",
       type: "website",
     },
