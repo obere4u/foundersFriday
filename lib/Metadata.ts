@@ -35,7 +35,7 @@ export function generateMetadata({
       siteName: baseTitle,
       images: [
         {
-          url: "https://foundersfriday.com/images/og-image.png",
+          url: "https://founders-friday-phi.vercel.app/og-image.png",
           width: 1200,
           height: 630,
         },
