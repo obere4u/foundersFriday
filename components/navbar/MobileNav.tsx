@@ -6,14 +6,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { navbarItems } from "@/constants";
+import { cn } from "@/lib/util";
+import { usePathname } from "next/navigation";
 
 export default function MobileNav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <MaxWidthWrapper className="lg:hidden flex items-center justify-between px-4 py-4 relative">
       {/* Logo */}
-      <Link href={"/"} className="w-[40px] h-[40px]">
+      <Link
+        href={"/"}
+        className="w-[40px] h-[40px]"
+      >
         <Image
           src={"/logo/navbar-logo_81x80.svg"}
           width={40}
@@ -73,7 +79,12 @@ export default function MobileNav() {
               {navbarItems.map((item, index) => (
                 <li
                   key={index}
-                  className="capitalize font-medium text-[1rem] text-[#000000] hover:text-[#8300FF] transition-colors duration-200 ease-in-out"
+                  className={cn(
+                    "capitalize font-medium text-[1rem] text-[#000000] hover:text-[#8300FF] transition-colors duration-200 ease-in-out",
+                    item.title === "home" &&
+                      pathname === "/" &&
+                      "text-[#8300FF]"
+                  )}
                 >
                   <Link
                     href={item.href}

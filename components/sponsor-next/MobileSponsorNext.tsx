@@ -21,7 +21,7 @@ export default function MobileSponsorNext() {
             <div
               key={why.title + index}
               className={cn(
-                "rounded-[15px] p-4 border border-[#A649FF] flex flex-col items-center bg-[#FDF7FF]",
+                "rounded-[15px] animate-bounce p-4 border border-[#A649FF] flex flex-col items-center bg-[#FDF7FF]",
                 index % 4 === 0 || index % 4 === 3
                   ? "bg-[#DCB6FF]"
                   : "bg-[#EDDBFF]"
